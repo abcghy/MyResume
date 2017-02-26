@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.12.21)  4 FEB 2017 20:29
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2017.2.23)  26 FEB 2017 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,7 +1322,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ] [2] ) 
 Here is how much of TeX's memory you used:
  19789 strings out of 493591
- 406690 string characters out of 6143545
+ 406690 string characters out of 6143546
  381079 words of memory out of 5000000
  23050 multiletter control sequences out of 15000+600000
  6621 words of font info for 41 fonts, out of 8000000 for 9000
