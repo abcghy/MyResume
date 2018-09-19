@@ -11,7 +11,7 @@
 \begin{document}
 \name{高惠宇}
 \address{  beatbox\_gao@hotmail.com\\ GitHub: \url{https://github.com/abcghy} \\ Blog: \url{http://abcghy.github.io}}
-\address{上海闵行 \\  18818217393 17602152878}
+\address{上海杨浦 \\ 17602152878 18818217393}
 
 \begin{resume}
 
@@ -25,6 +25,13 @@
   英语 CET 6 \\英语水平良好，经常阅读 GitHub 上的文章、通过英语查找技术相关资料。也经常上 youtube 学习别人在 conference 上传递的经验。
 
 \section{工作经验}
+  2018.1--至今\ Android 研发工程师\ 上海见寻文化创意有限公司\\负责开发52hz公寓、聊天、支付、录音、播放模块。
+  \begin{itemize}
+    \item 独自搭建整个 App 框架，包括网络框架，MVVM 架构。 
+    \item 52hz公寓是目前较为流行的一周CP模式。用户可以在公寓里遵循房主的指示与CP进行互动、打卡、聊天；房主可以发布任务，对用户的打卡进行审批。
+    \item 聊天模块支持私聊、建群、发送emoji和sticker、发送图片、拍照、重新发送、@别人等功能。底层采用 websocket 与后端进行交互，具有自动重连功能，在应用进入后台时会断开连接，并采用 JPush 接收聊天消息。UI 为自定义 RecyclerView，配合DataBinding、SmartRefreshLayout 达到预期效果。
+    \item 失眠旅馆是一个文字、语音交流平台。白天发布较长文字和语音，晚上阅读、收听和评价别人分享。实时将用户的语音录制成AAC格式，并且具备暂停和恢复的功能。
+  \end{itemize}
   2017.3--2017.12\ Android 研发工程师\ 上海海鼎信息工程股份有限公司\\负责开发千帆掌柜、千帆平板、千帆外勤等项目。分别开发了开单模块;整体 Dialog 架构;库存盘点。\\千帆掌柜下载地址：\url{http://qianfan123.com/#1!dpos}
   \begin{itemize}
     \item 千帆掌柜为小型零售店主提供开单、收款、账目统计、管理店铺等功能。具有多种角色，店员也可以进行收款和统计。
@@ -36,7 +43,7 @@
     \item 到了吗用户端使用了地图、聊天、支付、推送等模块，为用户提供了方便、快捷的快递服务;
     \item 本人向公司技术开发团队推荐一系列新的开发工具，提高了公司生产力。
   \end{itemize}
-\clearpage
+% \clearpage
 \section{专业技能}
   \begin{multicols}{3}
     语言
@@ -45,14 +52,14 @@
       \item Kotlin
       \item JavaScript
       \item Python
+      \item Go
       \item Swift
-      \item PHP
     \end{itemize}
     框架
     \begin{itemize}
-      \item MVP
+      \item MVVM
       \item Vue
-      \item Spring Boot
+      \item Django
       \item Koa
     \end{itemize}
     技术
@@ -61,15 +68,15 @@
       \item RxJava
       \item DataBinding
       \item Git
-      \item TinkerPatch
+      \item Docker
     \end{itemize}
   \end{multicols}
 
 \section{个人评价}
   \begin{enumerate}
       % 整体架构
-      \item 熟练使用 DataBinding 和类 MVVM 的架构，以及使用 JUnit、Mockito 进行单元测试。
-      \item 使用组件化开发的方式，和 UI 沟通过后，将功能相同的 view 整合成一个组件。熟练掌握自定义 view 的方法，并热爱将代码开源至 Github, 之后通过 JitPack 发布可以复用的 Android 组件。
+      \item 熟练使用 DataBinding、ViewModel和LiveData 构建 MVVM 的架构，以及使用 JUnit、Mockito 进行单元测试。
+      \item 熟练掌握自定义 view 的方法，并热爱将代码开源至 Github, 之后通过 JitPack 发布可以复用的 Android 组件。
       % 小细节
       \item 在网络框架方面使用 Retrofit，同时使用 RxJava 进行各种异步操作，如获取网络数据、获取数据库数据、定时操作，对其较为了解。
       \item 对 Hotfix 较为了解，使用 TinkerPatch 使开发人员更快的解决bug。\\ \url{http://abcghy.github.io/2017/02/25/Tinker-Patch-Tutorial/}
@@ -77,9 +84,9 @@
       \item 使用 gradle 进行不同环境的配置，更好的进行持续集成开发。
       \item 使用 apktool, dex2jar, jdgui 进行反编译，分析竞品是如何完善功能，解决问题的。
       % 和 android 关系较轻的
-      \item 独自建立远程服务器，配置远程编译环境，进行远程编译，节约本地开发资源，提高开发效率。并了解 Jenkins, flow.ci 等 CI 工具的使用。
-      \item 使用 Git 进行版本控制，熟悉多人协作开发，能够独立解决冲突情况。
-      \item 拥有较强的学习能力，对新事物永远充满好奇。不仅掌握 Android 开发，还对网页前端、iOS 开发, 后端有所涉及。
+      \item 熟练使用 Docker 搭建各种开发所需环境，如 Jenkins，独自搭建远程CI/CD环境。
+      \item 使用 Git 进行版本控制，熟悉多人协作开发，能够独立解决冲突情况并帮助合作者找出具体问题。
+      \item 拥有较强的学习能力，对新事物永远充满好奇。不仅掌握 Android 开发，还对后端、网页前端、iOS 开发有所涉及。
   \end{enumerate}
 
 \end{resume}
