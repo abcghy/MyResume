@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1540523485 "/Users/sakura/code/MyResume/res1.tex" "res1.pdf" "res1" 1540523485
+["pdflatex"] 1540784766 "/Users/sakura/code/MyResume/res1.tex" "res1.pdf" "res1" 1540784766
   "/Library/Fonts/Songti.ttc" 1534542990 66933252 bc432ad7628283e59cc866a2cb6e3437 ""
-  "/Users/sakura/code/MyResume/res1.tex" 1540523484 5287 f8ccce4c6cbdf19d6c24a34973762cf9 ""
-  "/dev/null" 1540523458 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "/Users/sakura/code/MyResume/res1.tex" 1540784765 5335 f6db4d7104394709562446334e7fe235 ""
+  "/dev/null" 1540784748 0 d41d8cd98f00b204e9800998ecf8427e ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1480098701 1528 abec98dbc43e172678c11b3b9031252a ""
@@ -71,8 +71,8 @@
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1537095053 4220280 2e7dc6ce801cd1128c9917e63633e69a ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "res.cls" 1531842639 25066 8ec1e15ab4c53340bc92863668c7be49 ""
-  "res1.aux" 1540523485 8 a94a2480d3289e625eea47cd1b285758 ""
-  "res1.tex" 1540523484 5287 f8ccce4c6cbdf19d6c24a34973762cf9 ""
+  "res1.aux" 1540784766 8 a94a2480d3289e625eea47cd1b285758 ""
+  "res1.tex" 1540784765 5335 f6db4d7104394709562446334e7fe235 ""
   (generated)
   "res1.log"
   "res1.pdf"
