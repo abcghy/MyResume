@@ -11,7 +11,7 @@
 \begin{document}
 \name{高惠宇}
 \address{  beatbox\_gao@hotmail.com\\ GitHub: \url{https://github.com/abcghy} \\ Blog: \url{https://abcghy.github.io/}}
-\address{上海杨浦 \\ 17602152878 18818217393}
+\address{上海长宁 \\ 17602152878 18818217393}
 
 \begin{resume}
 
@@ -22,28 +22,57 @@
   上海大学\ 计算机工程与科学\ 本科\ 2012.9\~{}2016.6
 
 \section{语言能力}
-  英语 CET 6 \\英语水平良好，经常阅读 GitHub 上的文章、通过英语查找技术相关资料。也经常上 youtube 学习别人在 conference 上传递的经验。
+  英语 CET 6 \\英语水平良好，经常阅读 GitHub 上的各种文档与 Repo，通过英语查找技术相关资料。也经常上 Youtube 学习一些 conference 和技术分享。
 
 \section{工作经验}
-  2018.1--至今\ Android 研发工程师\ 上海见寻文化创意有限公司\\负责开发52hz公寓、聊天、支付、录音、播放模块。
+\large 上海卫莎网络科技有限公司 \normalsize\\
+\small 2018.10--至今 Android 研发工程师 负责开发马卡龙玩图、绿幕侠。\normalsize
+
+    \emph{马卡龙玩图}\\
+    带有自动扣图功能的图片编辑应用，除了图片分割以外，还有融合、换天空、模板、图层混合等功能。 App Store 经常被首页推荐， Android 版也被小米、华为等厂商推荐。\\
+    下载链接： \url{https://android.myapp.com/myapp/detail.htm?apkName=com.versa}
+\begin{itemize}
+\item 使用 Retrofit, LiveData, ViewModel, Room 等重构网络模块以及各种旧代码
+\item 负责社区首页、模板、贴纸、融合、换天空、菜单、分享、广告、搜索等核心模块的实现
+\item 使用 kotlin 重构部分代码，使代码更加易读，开发更加快速
+\item OOM 的探索以及优化，降低用户崩溃概率。使用 AspectJ 对图片进行大小检测，遇到加载错误大小的图片进行提示，减少内存占用。% 图片应用，比较容易内存不足。
+\end{itemize}
+
+\emph{绿幕侠}\\
+拍摄人物并实时扣掉背景，并辅以炫酷视频为背景，最终合成一个无须绿幕即可扣像的视频应用。用到了 OpenGL、MediaCodec、MediaMuxer 等技术。\\
+曾被华为 9x 发布会作为华为芯片的应用app推荐。\\
+下载链接： \url{http://app.mi.com/details?id=com.yitian.greenscreenman}\\
+华为合作链接：\url{https://developer.huawei.com/consumer/cn/doc/development/hiai-Guides/3142914}
+\begin{itemize}
+\item 通过 FrameBuffer 实时获取前后摄像头的纹理，输入给本地分割模型获取扣取后的人像纹理，并在此基础上使用商汤SDK做美颜等功能。
+\item 配合扣出的人像纹理，融合下载的视频或者用户自己上传的视频，使用 Google 的 Grafika ，将纹理渲染在屏幕上。
+\item 由于Android手机的屏幕大小和摄像头支持分辨率繁多的原因，需要对纹理进行裁切。同时用户可以手动移动自己人像的位置，翻转、旋转、复制人像，所以需要做 Android Matrix 和 OpenGL Matrix 的映射。通过限制 Bounding Box 的变化速度，从而使用户更好的对自己的人像进行控制。
+\end{itemize}
+
+    \large 上海见寻文化创意有限公司 \emph{概率论}\normalsize\\
+  \small 2018.1--2018.10\ Android 研发工程师\ 负责开发52hz公寓、聊天、支付、录音、播放模块。\normalsize
   \begin{itemize}
     \item 独自搭建整个 App 框架，包括网络框架，MVVM 架构。 
     \item 52hz公寓是目前较为流行的一周CP模式。用户可以在公寓里遵循房主的指示与CP进行互动、打卡、聊天；房主可以发布任务，对用户的打卡进行审批。
     \item 聊天模块支持私聊、建群、发送emoji和sticker、发送图片、拍照、重新发送、@别人等功能。底层采用 websocket 与后端进行交互，具有自动重连功能，在应用进入后台时会断开连接，并采用 JPush 接收聊天推送。UI 为自定义 RecyclerView，配合DataBinding、SmartRefreshLayout 达到预期效果。
     \item 失眠旅馆是一个文字、语音交流平台。白天发布较长文字和语音，晚上阅读、收听和评价别人分享。实时将用户的语音录制成AAC格式，并且具备暂停和恢复的功能。
   \end{itemize}
-  2017.3--2017.12\ Android 研发工程师\ 上海海鼎信息工程股份有限公司\\负责开发千帆掌柜、千帆平板、千帆外勤等项目。分别开发了开单模块;整体 Dialog 架构;库存盘点。\\千帆掌柜下载地址：\url{http://qianfan123.com/#1!dpos}
+
+\large 上海海鼎信息工程股份有限公司\normalsize\\
+  \small 2017.3--2017.12\ 负责开发千帆掌柜、千帆平板、千帆外勤等项目。分别开发了开单模块;整体 Dialog 架构;库存盘点。\\千帆掌柜下载地址：\url{http://qianfan123.com/#1!dpos}\normalsize
   \begin{itemize}
     \item 千帆掌柜为小型零售店主提供开单、收款、账目统计、管理店铺等功能。具有多种角色，店员也可以进行收款和统计。
     \item 千帆平板是掌柜的升级版，具有全部功能并且可以更好的进行商品管理和开单。
     \item 千帆外勤为巡店人员提供库存盘点、退换货、绩效考核等功能。并且可以轻松查看当日工作情况。
   \end{itemize}
-  2016.2--2017.2\ Android 研发工程师\ 花致信息技术有限公司\\独立负责开发到了吗用户端 Android app.独立搭建Retrofit+RxAndroid+MVP框架,以便更好地进行单元测试和重构.\\到了吗下载地址: \url{http://www.wandoujia.com/apps/cn.edu.shu.dlm}
+
+\large 花致信息技术有限公司\normalsize\\
+  \small 2016.2--2017.2\ Android 研发工程师\\独立负责开发到了吗用户端 Android app.独立搭建Retrofit+RxAndroid+MVP框架,以便更好地进行单元测试和重构.\\到了吗下载地址: \url{http://www.wandoujia.com/apps/cn.edu.shu.dlm} \normalsize
   \begin{itemize}
     \item 到了吗用户端使用了地图、聊天、支付、推送等模块，为用户提供了方便、快捷的快递服务;
     \item 本人向公司技术开发团队推荐一系列新的开发工具，提高了公司生产力。
   \end{itemize}
-% \clearpage
+ %\clearpage
 \section{专业技能}
   \begin{multicols}{3}
     语言
@@ -53,12 +82,12 @@
       \item JavaScript
       \item Python
       \item Go
-      \item Swift
     \end{itemize}
     框架
     \begin{itemize}
       \item MVVM
       \item Vue
+      \item FastAPI
       \item Django
       \item Koa
     \end{itemize}
@@ -66,7 +95,7 @@
     \begin{itemize}
       \item Retrofit
       \item RxJava
-      \item DataBinding
+      \item OpenGL
       \item Git
       \item Docker
     \end{itemize}
@@ -78,13 +107,13 @@
       \item 熟练使用 DataBinding、ViewModel和LiveData 构建 MVVM 的架构，以及使用 JUnit、Mockito 进行单元测试。
       \item 熟练掌握自定义 view 的方法，并热爱将代码开源至 Github, 之后通过 JitPack 发布可以复用的 Android 组件。
       % 小细节
-      \item 在网络框架方面使用 Retrofit，同时使用 RxJava 进行各种异步操作，如获取网络数据、获取数据库数据、定时操作，对其较为了解。
-      \item 对 Hotfix 较为了解，使用 TinkerPatch 使开发人员更快的解决bug。\\ \url{http://abcghy.github.io/2017/02/25/Tinker-Patch-Tutorial/}
+      \item 在网络框架方面使用 Retrofit，同时使用 RxJava 或协程进行各种异步操作，如获取网络数据、获取数据库数据、定时操作，对其较为了解。
+      \item 对 Hotfix 较为了解，在应用上线后，还可以通过 Tinker 来对应用进行热修复。\\ \url{http://abcghy.github.io/2017/02/25/Tinker-Patch-Tutorial/}
       % 反编译等等出彩的地方
       \item 使用 gradle 进行不同环境的配置，更好的进行持续集成开发。
       \item 使用 apktool, dex2jar, jdgui, jadx-gui 进行反编译，分析竞品是如何完善功能，解决问题的。
       % 和 android 关系较轻的
-      \item 熟练使用 Docker 搭建各种开发所需环境，如 Jenkins，独自搭建远程CI/CD环境。
+      \item 熟练使用 Docker 搭建各种开发所需环境，如 Jenkins, Gitlab Runner, Nexus 等，独自搭建远程CI/CD环境。
       \item 使用 Git 进行版本控制，熟练掌握 Git Flow，熟练掌握 merge 和 rebase 用法，能够独立解决冲突情况并帮助合作者找出具体问题。
       \item 拥有较强的学习能力，对新事物永远充满好奇。不仅掌握 Android 开发，还对后端、网页前端、iOS 开发有所涉及。
   \end{enumerate}
